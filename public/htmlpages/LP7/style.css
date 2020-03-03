@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "main   main   header"
+        "main   main   candy"
+        "nom    yum    candy"
+        "footer footer candy";
+    grid-template-columns: 1fr 1.2fr 1.5fr;
+    grid-template-rows: 1fr 4fr 2fr 2fr;
+    height: 100vh;
+}
+main {
+    padding: 0 5rem;
+    grid-area: main;
+    background: #FFFADF;
+}
+main .logo {
+    color: lightcoral;
+    font-size: 1.8rem;
+}
+main h2 {
+    margin-top: 1rem;
+    width: 20%;
+}
+main p {
+    width: 80%;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+section.nom {
+    grid-area: nom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #C4B35A;
+}
+section.nom p{
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+}
+section.nom hr {
+    width: 25%;
+}
+section.yum {
+    grid-area: yum;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+}
+section.yum p{
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+}
+section.yum hr {
+    width: 25%;
+}
+section.diabetus {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    background: #202020;
+}
+section.diabetus p {
+    color: gray;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+header {
+    grid-area: header;
+    margin: auto 0;
+}
+header ul {
+    display: flex;
+}
+header ul li {
+    list-style: none;
+    margin: auto;
+    padding: auto;
+    font-size: 1.2rem;
+}
+header ul #shop-candies {
+    color: lightcoral;
+}
+.candy {
+    grid-area: candy;
+    background: url('candy.jpg') no-repeat;
+    background-size: cover;
+}
+@media(max-width: 700px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "main"
+            "nom"
+            "yum"
+            "footer";
+        grid-template-rows: repeat(5,1fr);
+        height: 100vh;
+    }
+    main {
+        background: url('candy.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    main h2, main p {
+        color: white;
+    }
+}
