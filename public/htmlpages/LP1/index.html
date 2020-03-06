@@ -1,101 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/b2f3b450f1.js" crossorigin="anonymous"></script>
-    <style>
-        * {
-        margin: 0;
-        padding: 0;
-        }
-        body {
-            background-image: url(image.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .logo {
-            float: left;
-            padding: 20px;
-            font-size: 30px;
-        }
-
-        li {
-            float: right;
-            padding: 20px;
-            list-style-type: none;
-        }
-
-        .clr-fix {
-            clear: both;
-        }
-
-        main {
-            margin-top: 13%;
-            text-align: center;
-        }
-
-        form {
-            margin: 10px 20%;
-            padding: 20px 5px;
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-
-        input, button {
-            padding: 10px;
-            margin: 5px 15px;
-            border-style: none;
-        }
-
-        button {
-            background: rgba(255, 255, 255, 0.8);
-        }
-        h3 {
-            color: gray;
-        }
-
-        h1, li, .logo, i {
-            color: white;
-        }
-        i {
-            margin-left: 50%;
-        }
-
-        footer {
-            margin-top: 30vh;
-        }
-    </style>
-    <title>Landing Page</title>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-    <header>
-        <p class="logo">Canvas</p>
-        <nav>
-            <ul>
-                <li>Buy Now</li>
-                <li>Specifications</li>
-                <li>Testimonials</li>
-                <li>Pricing</li>
-                <li>Features</li>
-                <li>Home</li>
-            </ul>
-        </nav>
-    </header>
-    <div class="clr-fix"></div>
-    <main>
-        <h1>AWESOME HTML5 LANDING PAGE</h1>
-        <h3>Building a landing page was never so easy</h3>
-        <form action="submit">
-            <input type="text" placeholder="Your Name*">
-            <input type="email" placeholder="Your email*">
-            <input type="password" placeholder="Choose Password*">
-            <button>START FREE TRIAL</button>
-        </form>
-    </main>
-    <footer>
-        <i class="fas fa-chevron-down"></i>
-    </footer>
+	<h1>Calculator</h1>
+	<div class="area">
+		<div id="screen">
+			<div id="uprstr"></div>
+			<div id="lwrstr">0</div>
+		</div>
+		<div id="btnarea">
+			<!--Row 1 -->
+			<button id="7" class="digit" onclick="digitClicked(this.id)">7</button>
+			<button id="8" class="digit" onclick="digitClicked(this.id)">8</button>
+			<button id="9" class="digit" onclick="digitClicked(this.id)">9</button>
+			<button class="clear" onclick="cleard()">C</button>
+			<button class="allclear" onclick="allClear()">AC</button>
+			<!--Row 2 -->
+			<button id="4" class="digit" onclick="digitClicked(this.id)">4</button>
+			<button id="5" class="digit" onclick="digitClicked(this.id)">5</button>
+			<button id="6" class="digit" onclick="digitClicked(this.id)">6</button>
+			<button id="m" class="operator" onclick="operatorClicked(this.id)">*</button>
+			<button id="d" class="operator" onclick="operatorClicked(this.id)">/</button>
+			<!--Row 3 -->
+			<button id="1" class="digit" onclick="digitClicked(this.id)">1</button>
+			<button id="2" class="digit" onclick="digitClicked(this.id)">2</button>
+			<button id="3" class="digit" onclick="digitClicked(this.id)">3</button>
+			<button id="a" class="operator" onclick="operatorClicked(this.id)">+</button>
+			<button id="s" class="operator" onclick="operatorClicked(this.id)">-</button>
+			<!--Row 4 -->
+			<button class="digit"> </button>
+			<button id="0" class="digit" onclick="digitClicked(this.id)">0</button>
+			<button id="p" class="operator" onclick="operatorClicked(this.id)">.</button>
+			<button class="equal tworow" onclick="equals()">=</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

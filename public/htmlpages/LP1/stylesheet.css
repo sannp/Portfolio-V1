@@ -1,0 +1,68 @@
+h1 {
+	text-align: center;
+}
+.area {
+	background-color: grey;
+	margin: auto;
+	width: 400px;
+	height: 505px;
+	border-radius: 10px;
+}
+
+#screen {
+	position: absolute;
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 380px;
+	height: 120px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+#uprstr {
+	height: 60px;
+	text-align: right;
+	font: 3rem 'Fira Sans', sans-serif;
+	color: lightgrey;
+}
+
+#lwrstr {
+	height: 60px;
+	text-align: right;
+	font: 3rem 'Fira Sans', sans-serif;
+}
+
+#btnarea {
+	position: absolute;
+	display: grid;
+	grid-template: 90px 90px 90px 90px / 20% 20% 20% 20% 20%;
+	margin-top: 135px;
+	margin-left: 10px;
+	border-radius: 5px;
+	height: 360px;
+	width: 380px;
+	background-color: lightblue;
+}
+
+.tworow {
+	grid-column-start: 4;
+	grid-column-end: 6;
+}
+
+.digit, .btn {
+	font: 1rem 'Fira Sans', sans-serif;
+    padding: .5rem;
+    background: #86d1f0;
+    border: none;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.operator, .clear, .allclear, .equal {
+	font: 1rem 'Fira Sans', sans-serif;
+    padding: .5rem;
+    background: #2C94C4;
+    border: none;
+    border-radius: 4px;
+    margin: 4px;
+}

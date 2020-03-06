@@ -132,6 +132,32 @@ header {
   transform: scale(1.1);
 }
 
+/* Projects JavaScript
+------------------------------------*/
+.javascript-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+.javascript-grid figure {
+  margin: 0;
+}
+.javascript-grid figure figcaption {
+  color: rgb(13, 54, 73);
+  text-align: center;
+}
+.javascript-grid a {
+  margin: auto;
+}
+.javascript-grid img {
+  transition: all 0.3s;
+  width: 100%;
+  max-width: 100%;
+}
+.javascript-grid img:hover {
+  transform: scale(1.1);
+}
 /* Work Experience
 ------------------------------------*/
 .work-experience {
