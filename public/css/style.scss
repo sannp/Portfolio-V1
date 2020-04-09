@@ -69,7 +69,24 @@ h3 {
 .divider > section:last-of-type {
   border-bottom: none;
 }
+/* Skills
+------------------------------------*/
+.skills {
+  background: #F7FFF7;
 
+  a {
+    color: #fff;
+    background: rgb(49, 140, 245);
+    text-decoration: none;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  a:hover {
+    background: lighten( rgb(49, 140, 245), 20);
+  }
+}
 
 /* Profile
 ------------------------------------*/
@@ -83,20 +100,23 @@ header {
 ------------------------------------*/
 .projects {
   background: #F7FFF7;
-}
-.projects a {
-  color: #2F3061;
-}
-.projects .btn {
-  color: #F7FFF7;
-  background: #2F3061;
-  text-decoration: none;
-  padding: 8px;
-  border-radius: 4px;
-  display: inline-block;
-}
-.projects .btn:hover {
-  background: rgba(47, 48, 97, 80%);
+
+  a {
+    color: #2F3061;
+  }
+  .btn {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all 0.2s;
+  }
+  .btn:hover {
+    transform: scale(1.1);
+    background: rgba(47, 48, 97, 80%);
+  }
 }
 .project-item {
   overflow: hidden;
@@ -125,7 +145,7 @@ header {
   margin: auto;
 }
 .html-grid img {
-  transition: all 0.3s;
+  transition: all 0.2s;
   max-width: 100%;
 }
 .html-grid img:hover {
@@ -151,7 +171,7 @@ header {
   margin: auto;
 }
 .javascript-grid img {
-  transition: all 0.3s;
+  transition: all 0.2s;
   width: 100%;
   max-width: 100%;
 }
