@@ -14,7 +14,9 @@ html {
           box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -23,7 +25,7 @@ body {
   color: #343434;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -33,7 +35,7 @@ img {
 }
 
 a {
-  color: #FFE66D;
+  color: #ffe66d;
 }
 
 a:hover {
@@ -49,8 +51,9 @@ h2 {
   font-size: 45px;
 }
 
-h1, h2 {
-  font-family: 'Caveat', cursive;
+h1,
+h2 {
+  font-family: "Caveat", cursive;
   font-weight: 400;
   margin: 0;
 }
@@ -86,7 +89,7 @@ h3 {
 /* Skills
 ------------------------------------*/
 .skills {
-  background: #F7FFF7;
+  background: #f7fff7;
 }
 
 .skills a {
@@ -103,26 +106,46 @@ h3 {
   background: #92c2fa;
 }
 
+.skills .language {
+  background-color: lightsalmon;
+}
+
+.skills .framework {
+  background-color: lightcoral;
+}
+
+.skills .library {
+  background-color: lightseagreen;
+}
+
+.skills .database {
+  background-color: lightslategrey;
+}
+
+.skills .tool {
+  background-color: lightgreen;
+}
+
 /* Profile
 ------------------------------------*/
 header {
   background: #3c3c4e;
-  color: #F7FFF7;
+  color: #f7fff7;
 }
 
 /* Projects
 ------------------------------------*/
 .projects {
-  background: #F7FFF7;
+  background: #f7fff7;
 }
 
 .projects a {
-  color: #2F3061;
+  color: #2f3061;
 }
 
 .projects .btn {
-  color: #F7FFF7;
-  background: #2F3061;
+  color: #f7fff7;
+  background: #2f3061;
   text-decoration: none;
   padding: 8px;
   border-radius: 4px;
@@ -207,10 +230,11 @@ header {
 }
 
 .javascript-grid img {
+  margin: auto;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  height: 200px;
   width: 100%;
-  max-width: 100%;
 }
 
 .javascript-grid img:hover {
@@ -218,10 +242,49 @@ header {
           transform: scale(1.1);
 }
 
+/* JavaScript Games
+------------------------------------*/
+.games-grid {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  gap: 20px;
+}
+
+.games-grid figure {
+  margin: 0;
+}
+
+.games-grid figure figcaption {
+  color: #0d3649;
+  text-align: center;
+}
+
+.games-grid a {
+  margin: auto;
+}
+
+.games-grid img {
+  margin: auto;
+  border: 1px dashed black;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  height: 200px;
+  width: 100%;
+}
+
+.games-grid img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  border: 2px solid black;
+}
+
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-  background: #A1C6D7;
+  background: #a1c6d7;
 }
 
 /* Education
@@ -241,7 +304,7 @@ header {
 ------------------------------------*/
 footer {
   background: #343434;
-  color: #F7FFF7;
+  color: #f7fff7;
 }
 
 .contact-list {
@@ -257,7 +320,8 @@ footer {
 /* Responsive
 ------------------------------------*/
 @media screen and (min-width: 750px) {
-  header, footer {
+  header,
+  footer {
     text-align: center;
   }
   .project-item img {
